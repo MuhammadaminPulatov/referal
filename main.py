@@ -10,15 +10,10 @@ from aiogram.filters import CommandStart, Command, CommandObject
 from aiogram.types import Message
 from aiogram.utils.deep_linking import create_start_link
 
-
-
 data = {}
 
-# Bot token can be obtained via https://t.me/BotFather
-TOKEN = "7233075659:AAH2EVxZTzqKlGJoYzOYNkqwTORdXu0xGrk"
+TOKEN = "8035117395:AAGspUWFopsQIEIIiuFvk90_9bKMylTuhlc"
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
-
-# All handlers should be attached to the Router (or Dispatcher)
 
 dp = Dispatcher()
 
@@ -56,12 +51,7 @@ async def echo_handler(message: Message) -> None:
     await message.answer(f"{cnt}")
 
 async def main() -> None:
-    # Initialize Bot instance with default bot properties which will be passed to all API calls
-
-
-    # And the run events dispatching
     await dp.start_polling(bot)
-
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
