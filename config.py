@@ -1,5 +1,5 @@
-TOKEN = "8199179880:AAHkF30ssf6T16TkVJ9MoHZEWulqxZ2NKOc"
-CHANNEL = "@XDev_Pro"
+TOKEN = ""
+CHANNEL = "@username"
 
 DB_NAME = "postgres"
 DB_USER = "postgres"
